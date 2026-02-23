@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "open-app"
+version = "0.1.0"
+description = "A minimal usable starter project"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Open Project" }]
+dependencies = []
+
+[project.scripts]
+open-app = "open_app.cli:main"
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
